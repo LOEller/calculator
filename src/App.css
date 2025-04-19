@@ -36,3 +36,82 @@
     transform: rotate(360deg);
   }
 }
+
+.calculator {
+  width: 320px;
+  margin: 50px auto;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.display {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-align: right;
+  min-height: 60px;
+}
+
+.equation {
+  color: #666;
+  font-size: 14px;
+  min-height: 20px;
+}
+
+.result {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 10px;
+}
+
+button {
+  border: none;
+  padding: 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  min-height: 60px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.number {
+  background-color: #fff;
+  color: #333;
+}
+
+.operator {
+  background-color: #f0f0f0;
+  color: #ff9500;
+  font-weight: bold;
+}
+
+.equals {
+  background-color: #ff9500;
+  color: white;
+  grid-column: 4;
+  grid-row: 3 / span 3;
+}
+
+.clear {
+  background-color: #ff3b30;
+  color: white;
+  grid-column: 1;
+}
+
+.zero {
+  grid-column: 1 / span 2;
+}
